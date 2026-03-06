@@ -1,0 +1,18 @@
+# Web Interface
+streamlit>=1.41.0
+
+# LangChain Core & Framework
+langchain>=1.2.0
+langchain-community>=0.3.0
+
+# Local AI (Ollama) & Vector Store (Chroma)
+langchain-ollama>=1.0.1
+langchain-chroma>=1.1.0
+
+# Document Processing
+pypdf>=5.0.0
+docx2txt>=0.8
+
+# Utilities
+requests>=2.32.0
+python-dotenv>=1.0.0
