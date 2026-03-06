@@ -1,10 +1,10 @@
-This README summarizes the setup for your **HOA Knowledge Assistant**, a RAG (Retrieval-Augmented Generation) system built with LangChain, Ollama, and Streamlit.
+This README summarizes the setup for your **My Personal Assistant**, a RAG (Retrieval-Augmented Generation) system built with LangChain, Ollama, and Streamlit.
 
 ---
 
-# 🏠 HOA Knowledge Assistant
+# 🏠 Personal Assistant
 
-A professional document-chat system designed to index and query local HOA documents (PDFs and DOCX) using local LLMs.
+A professional document-chat system designed to index and query local documents (PDFs and DOCX) using local LLMs.
 
 ## 📋 Prerequisites
 
@@ -23,10 +23,10 @@ Open your terminal (or Anaconda Prompt) and run the following commands to create
 
 ```bash
 # Create the environment
-conda create -n hoa python=3.11 -y
+conda create -n aip python=3.11 -y
 
 # Activate the environment
-conda activate hoa
+conda activate aip
 
 # Install Streamlit and required libraries
 pip install streamlit langchain langchain-community langchain-ollama langchain-chroma pypdf docx2txt requests
@@ -37,10 +37,10 @@ pip install streamlit langchain langchain-community langchain-ollama langchain-c
 
 ## 📂 2. Project Structure
 
-Ensure your project folder (`hoa_project`) is organized as follows:
+Ensure your project folder (`project`) is organized as follows:
 
 ```text
-hoa_project/
+project/
 ├── .streamlit/
 │   └── secrets.toml      # Admin password
 ├── pages/
@@ -92,7 +92,7 @@ VBS = documents/vbs
 1. **Start Ollama**: Ensure the Ollama application is running in your taskbar.
 2. **Navigate to Project**:
 ```bash
-cd D:\Projects\AI\hoa_project
+cd D:\Projects\AI\project
 
 ```
 
@@ -119,4 +119,5 @@ streamlit run Home.py
 
 * **Duplicate Element Error**: If the chat input crashes, ensure you are only calling `st.chat_input` once per page and that it has a unique `key`.
 * **Ollama Offline**: If the app says Ollama is offline, check that your local Ollama server is running at `http://localhost:11434`.
-* **ModuleNotFoundError**: Ensure you are running the command from the root folder (`hoa_project`) and not from inside `src` or `pages`.
+
+* **ModuleNotFoundError**: Ensure you are running the command from the root folder (`project`) and not from inside `src` or `pages`.
